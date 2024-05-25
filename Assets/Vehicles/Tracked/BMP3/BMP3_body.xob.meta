@@ -1,0 +1,150 @@
+MetaFileClass {
+ Name "{6F4C72A07FCE6495}Assets/Vehicles/Tracked/BMP3/BMP3_body.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{5B3A5DA84846B725}" {
+     SourceMaterial "btr90_opt"
+     AssignedMaterial "{CE4D71F78AAA28FA}Assets/Vehicles/Tracked/BMP3/data/btr90_opt.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B700}" {
+     SourceMaterial "interier1"
+     AssignedMaterial "{BA7293A1C7684C22}Assets/Vehicles/Tracked/BMP3/data/interier1.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B71D}" {
+     SourceMaterial "interier2"
+     AssignedMaterial "{E49ABAE278E5C22D}Assets/Vehicles/Tracked/BMP3/data/interier2.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B71B}" {
+     SourceMaterial "interier3"
+     AssignedMaterial "{1092FD7A7538AA59}Assets/Vehicles/Tracked/BMP3/data/interier3.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B718}" {
+     SourceMaterial "body2"
+     AssignedMaterial "{5B633C12B98DF949}Assets/Vehicles/Tracked/BMP3/data/body2.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B714}" {
+     SourceMaterial "body1"
+     AssignedMaterial "{058B155106007746}Assets/Vehicles/Tracked/BMP3/data/body1.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B711}" {
+     SourceMaterial "wheels"
+     AssignedMaterial "{B08F34DD6A49833C}Assets/Vehicles/Tracked/BMP3/data/wheels.emat"
+    }
+    MaterialAssignClass "{5B3A5DA84846B76F}" {
+     SourceMaterial "mirror"
+     AssignedMaterial "{A47C5D03ADB1464C}Common/Materials/Mirror_generic.emat"
+    }
+    MaterialAssignClass "{5B3A5DA3C48FFDD3}" {
+     SourceMaterial "Track_R"
+     AssignedMaterial "{6A2B938212C1CDA2}Assets/Vehicles/Tracked/BMP3/data/Track_R.emat"
+    }
+    MaterialAssignClass "{5B3A5DA3C48FFDC1}" {
+     SourceMaterial "Track_L"
+     AssignedMaterial "{A55B48CFC262CCE2}Assets/Vehicles/Tracked/BMP3/data/Track_L.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Body {
+    }
+    MeshParam TrackL {
+    }
+    MeshParam TrackR {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_Battery_01 {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{5D38201F93B9DE65}Common/Materials/Game/VehicleParts/vehicle_battery.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UBX_Battery_02 {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{5D38201F93B9DE65}Common/Materials/Game/VehicleParts/vehicle_battery.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UBX_Engine_01 {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{0B9EB7B9C8DCC6A5}Common/Materials/Game/VehicleParts/engine.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UBX_Radiator_01 {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{1950188BB10D20EA}Common/Materials/Game/Metal/metal_5mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_FuelTank_01 {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{2E934203697527B6}Common/Materials/Game/VehicleParts/fuel_tank.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Geometry_1 {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Geometry_2 {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Geometry_3 {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_FG_Body {
+     LayerPreset "FireView"
+     SurfaceProperties {
+      "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat" "{F77B3BDF8F23AD5E}Common/Materials/Game/Armor/armor_50mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{5B3A5DA848026EB1}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5B3A5DA8480279A7}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5B3A5DA848027928}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5B3A5DA848027961}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5B3A5DA848027ABD}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

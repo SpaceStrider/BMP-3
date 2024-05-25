@@ -1,0 +1,5 @@
+MatPBRBasic {
+ RoughnessScale 1.6
+ BCRMap "{A842AFC1693F5288}Assets/Vehicles/Tracked/BMP3/data/Textures/wheels_BCR.edds"
+ NMOMap "{909A1453B0480016}Assets/Vehicles/Tracked/BMP3/data/Textures/wheels_NMO.edds"
+}

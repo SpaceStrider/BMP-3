@@ -1,0 +1,41 @@
+GenericEntity : "{5CD690CF2464ABA9}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_Base.et" {
+ ID "476AE746F954DD20"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 45
+   PriorityAgainstVehicles 75
+   UsedAgainst 12
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "9M117 ATGM"
+     Description "ATGM for BMP3 Not guidable yet"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.5
+    }
+   }
+   WeightPerAmmo 5
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWell100mm2A70 "{476AE746EC5FBEE9}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "2A70 ATGM"
+    Icon ""
+    m_sAmmoCaliber "100mm"
+    m_sAmmoType "ATGM"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags HEAT
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5866951DE2665916}" {
+    }
+   }
+   MaxAmmo 5
+   AmmoConfig "{D470EDE1980E2E45}Configs/Weapons/Ammo/Ammo_100mm_BMP3.conf"
+   AmmoMapping {
+    1 1 1 1 1
+   }
+  }
+ }
+}

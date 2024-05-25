@@ -1,0 +1,91 @@
+Projectile : "{D40A105437369C1D}Prefabs/Weapons/Core/Ammo_GrenadeLauncher_Base.et" {
+ ID "50C6F965BA00F9FA"
+ components {
+  AICombatPropertiesComponent "{59C92CB12877478B}" {
+   Priority 80
+   PriorityAgainstVehicles -1
+   UsedAgainst 14
+  }
+  CollisionTriggerComponent "{5CB76768369B3D71}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5CB76768369B3D4A}" {
+     EffectPrefab "{1E525C9ABCD5F7E4}Prefabs/Weapons/Warheads/Warhead_HEF-I.et"
+     ParticleEffect "{5345414652C3EB8A}Particles/Weapon/Explosion_30mm_HEF-I.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+   }
+  }
+  InventoryItemComponent "{52627A12350994B6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1234AD20A4}" {
+    ItemDisplayName UIInfo "{5CB76768369B3D45}" {
+     Name "3OF32"
+     Description "3OF32 Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5CB76768369B3D42}" {
+     Weight 40
+     SizeSetupStrategy Manual
+     ItemDimensions 15 15 15
+     ItemVolume 1500
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{56E711941DDE376E}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 1.5
+      FOV 12
+     }
+    }
+    m_Size SLOT_3x3
+    m_SlotType SLOT_BACKPACK
+   }
+  }
+  MagazineComponent "{5CB76768369B3D5E}" {
+   MagazineWell MagazineWell30mm2A72 "{5CB76768369B3D5D}" {
+   }
+   UIInfo MagazineUIInfo "{5CB76768369B3D57}" {
+    m_sAmmoCaliber "30mm"
+    m_sAmmoType "HEF-I"
+    m_bShowAmmoTypeText 1
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5CB76768369B3D53}" {
+    }
+   }
+   ItemModel "{C00282D92734C535}Assets/Weapons/Ammo/Bullets/145x114/Cartridge_145x114.xob"
+   MaxAmmo 250
+   AmmoConfig "{8582314331A7847D}Configs/Weapons/Ammo/Ammo_30mm.conf"
+  }
+  MeshObject "{851AA4A2AE0A56BF}" {
+   Object "{C00282D92734C535}Assets/Weapons/Ammo/Bullets/145x114/Cartridge_145x114.xob"
+  }
+  Hierarchy "{5CB76768369B3D50}" {
+  }
+  RigidBody "{5CB76768369B3EAE}" {
+   Enabled 0
+   Layers 32
+   LayerPreset "Projectile"
+   Mass 15.6
+   ModelGeometry 1
+  }
+  ShellMoveComponent "{20FB66C5FA209A29}" {
+   InitSpeed 960
+   Mass 0.39
+   TimeToLive 20
+   ProjectileEffects {
+    BaseDamageEffect "{5184D7800EFDF1D7}" {
+     DamageValue 160
+    }
+   }
+   BallisticTableConfig "{CA0A6467CB33D89F}Configs/Weapons/AIBallisiticTables/AIBT_145x114_API_57BZ561S.conf"
+   AirDrag 0.00008
+   Diameter 30
+   DeflectionCriticalAngle 80
+   PenetratorType Chemical
+   PenetrationDepth 3
+   PenetrationSpeed 900
+   SonicCracks "{872291A99EEB61B0}Sounds/Weapons/_SharedData/BulletSonicCracks/HMG/Weapons_BulletSonicCracks_HMG.acp"
+   SubsonicFlybys "{E027A93DAFE3B0BB}Sounds/Weapons/_SharedData/BulletFlybys/HMG/Weapons_BulletFlybys_HMG.acp"
+  }
+ }
+ scale 7.8
+ ProjectileModel "{D807332FCA58B894}Assets/Weapons/Ammo/Tracers/Tracer_red.xob"
+ CartridgeModel "{C00282D92734C535}Assets/Weapons/Ammo/Bullets/145x114/Cartridge_145x114.xob"
+}

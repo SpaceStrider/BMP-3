@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F848B4E6BE86EA83}Prefabs/Weapons/HeavyWeapons/30mmCannon_BMP3.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

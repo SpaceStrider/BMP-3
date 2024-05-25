@@ -1,0 +1,7 @@
+MatPBRBasic {
+ RoughnessScale 2
+ BCRMap "{1B43FCB540722FD7}Assets/Vehicles/Tracked/BMP3/data/Textures/Track_BCR.edds"
+ NMOMap "{239B472799057D49}Assets/Vehicles/Tracked/BMP3/data/Textures/Track_NMO.edds"
+ GlobalMapsUVTransform MatUVTransform "{5C47762936DC5D33}" {
+ }
+}

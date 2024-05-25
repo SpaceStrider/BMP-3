@@ -1,0 +1,86 @@
+MetaFileClass {
+ Name "{FF6AE908F3175A06}Assets/Vehicles/Tracked/BMP3/BMP3_Turret.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{5C4490819E81A8B8}" {
+     SourceMaterial "btr90_opt"
+     AssignedMaterial "{CE4D71F78AAA28FA}Assets/Vehicles/Tracked/BMP3/data/btr90_opt.emat"
+    }
+    MaterialAssignClass "{5C4490819E81A89C}" {
+     SourceMaterial "interier1"
+     AssignedMaterial "{BA7293A1C7684C22}Assets/Vehicles/Tracked/BMP3/data/interier1.emat"
+    }
+    MaterialAssignClass "{5C4490819E81A89A}" {
+     SourceMaterial "interier2"
+     AssignedMaterial "{E49ABAE278E5C22D}Assets/Vehicles/Tracked/BMP3/data/interier2.emat"
+    }
+    MaterialAssignClass "{5C4490819E81A898}" {
+     SourceMaterial "interier3"
+     AssignedMaterial "{1092FD7A7538AA59}Assets/Vehicles/Tracked/BMP3/data/interier3.emat"
+    }
+    MaterialAssignClass "{5C4490819E81A896}" {
+     SourceMaterial "body2"
+     AssignedMaterial "{5B633C12B98DF949}Assets/Vehicles/Tracked/BMP3/data/body2.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Turret {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Geometry_4 {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Geometry_5 {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_Turret_FireGeometry {
+     LayerPreset "FireView"
+     SurfaceProperties {
+      "{DE262768AD81A12D}Common/Materials/Game/Armor/armor_25mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_TurretViewGeometry {
+     LayerPreset "ViewGeo"
+     SurfaceProperties {
+      "{DE262768AD81A12D}Common/Materials/Game/Armor/armor_25mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{5C4490819E783B12}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5C4490819E781511}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5C4490819E7816E5}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5C4490819E78163E}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5C4490819E781663}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

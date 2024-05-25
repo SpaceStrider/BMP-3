@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{5AAF62FB7DB2B13C}Sounds/Vehicles/Tracked/BMP3/Vehicles_BMP3_Track_r.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

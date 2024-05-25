@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DAF7ADBBDF60FF88}Prefabs/Vehicles/Core/BMPMiddleSuspension.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

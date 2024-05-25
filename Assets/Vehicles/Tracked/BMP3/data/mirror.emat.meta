@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{761CB76EF47642E3}Assets/Vehicles/Tracked/BMP3/data/mirror.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

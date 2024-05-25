@@ -1,0 +1,67 @@
+ProcAnimSignalResClass {
+ Inputs {
+  IOPItemInputClass {
+   id 1
+   name "rotation2"
+   tl 28 -5
+   children {
+    2
+   }
+   valueMin -360
+   valueMax 360
+  }
+  IOPItemInputClass {
+   id 7
+   name "rotation11"
+   tl 10.833 93.333
+   children {
+    8
+   }
+  }
+ }
+ Outputs {
+  IOPItemOutputClass {
+   id 2
+   name "rotationL"
+   tl 213.833 -2
+   input 1
+  }
+  IOPItemOutputClass {
+   id 8
+   name "rotationR"
+   tl 191.667 99.167
+   input 7
+  }
+ }
+ compiled IOPCompiledClass {
+  visited {
+   133 134 5 6
+  }
+  ins {
+   IOPCompiledIn {
+    data {
+     1 2
+    }
+   }
+   IOPCompiledIn {
+    data {
+     1 65538
+    }
+   }
+  }
+  outs {
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+   IOPCompiledOut {
+    data {
+     0
+    }
+   }
+  }
+  processed 4
+  version 2
+ }
+}

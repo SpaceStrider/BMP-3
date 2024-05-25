@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{8F8C2A7877DBBFF2}Prefabs/Weapons/Magazines/Box_30x165_2A72_250rnd_HEF-I.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

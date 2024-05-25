@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B1F9D201021E8ED5}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BMP3_Track.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

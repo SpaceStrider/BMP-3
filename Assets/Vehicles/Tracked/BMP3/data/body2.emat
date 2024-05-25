@@ -1,0 +1,72 @@
+MatPBRMulti {
+ Color 0.509 0.509 0.509 1
+ RoughnessScale 0.7
+ GlobalMCRMap "{ED30159E4A789AED}Assets/Vehicles/Tracked/BMP3/data/Textures/body2_BCR.edds"
+ VFXMap "{A59AABA4CF6B791F}Assets/Vehicles/Tracked/BMP3/data/Textures/body2_VFX.edds"
+ GlobalNMOMap "{D5E8AE0C930FC873}Assets/Vehicles/Tracked/BMP3/data/Textures/body2_NMO.edds"
+ MudOpacity 1
+ MudColor 0.138 0.121 0.1 1
+ MudRoughness 2
+ MudMetalness 0
+ MudBCRMap "{15A4D0147C0F3804}Assets/_SharedData/Plaster/ST_Plaster_Damaged_01_BCR.edds"
+ MudNMOMap "{96EF3CD8C8E643BA}Assets/_SharedData/Dirt/ST_Mud_01_NMO.edds"
+ MudMaskMap "{816ABEBED1A52FF3}Assets/_SharedData/DetailMask/ST_Mud_01_Mask.edds"
+ MudUVTransform MatUVTransform "{5B3A5DA5529C4D2D}" {
+  TilingU 6
+  TilingV 6
+ }
+ DirtOpacity 1
+ DirtLayerSharpness 0.662
+ DirtColor 0.1 0.086 0.062 1
+ DirtRoughness 1
+ DirtBCRMap "{15A4D0147C0F3804}Assets/_SharedData/Plaster/ST_Plaster_Damaged_01_BCR.edds"
+ DirtMaskMap "{490DFFF4475F7EC7}Assets/_SharedData/DetailMask/ST_Dirt_09_Mask1.edds"
+ DirtUVTransform MatUVTransform "{5B3A5DA57DB2E596}" {
+  TilingU 6
+  TilingV 6
+ }
+ Color_4 0.258 0.212 0.095 1
+ NMO_4 "{5E9B5A9AF633BD94}Assets/_SharedData/Metal/ST_Steel_Battered_NMO.edds"
+ MaskSharpness_4 9
+ MaskOffset_4 0.3
+ Mask_4 "{0DC0CF2664DE6DE5}Assets/_SharedData/DetailMask/ST_Scratch_01_Mask1.edds"
+ MaskUVScale_4 5.001
+ UVTransform_4 MatUVTransform "{5B3A5DA56FC5D46A}" {
+  TilingU 10
+  TilingV 10
+ }
+ DetNormal_4 0.2
+ Roughness_4 0.512
+ Metalness_4 0
+ Color_3 0.025 0.027 0.018 1
+ NMO_3 "{5E9B5A9AF633BD94}Assets/_SharedData/Metal/ST_Steel_Battered_NMO.edds"
+ MaskSharpness_3 9
+ MaskOffset_3 0.3
+ Mask_3 "{0DC0CF2664DE6DE5}Assets/_SharedData/DetailMask/ST_Scratch_01_Mask1.edds"
+ MaskUVScale_3 5.001
+ UVTransform_3 MatUVTransform "{5B3A5DA51101707C}" {
+  TilingU 10
+  TilingV 10
+ }
+ DetNormal_3 0.2
+ Roughness_3 0.512
+ Metalness_3 0
+ Color_2 0.044 0.042 0.025 1
+ NMO_2 "{5E9B5A9AF633BD94}Assets/_SharedData/Metal/ST_Steel_Battered_NMO.edds"
+ MaskSharpness_2 9
+ MaskOffset_2 0.3
+ Mask_2 "{0DC0CF2664DE6DE5}Assets/_SharedData/DetailMask/ST_Scratch_01_Mask1.edds"
+ MaskUVScale_2 5.001
+ UVTransform_2 MatUVTransform "{5B3A5DA5137AD567}" {
+  TilingU 10
+  TilingV 10
+ }
+ DetNormal_2 0.2
+ Roughness_2 0.512
+ Metalness_2 0
+ NMO_1 "{5E9B5A9AF633BD94}Assets/_SharedData/Metal/ST_Steel_Battered_NMO.edds"
+ UVTransform_1 MatUVTransform "{5CB42A9DE4411BB1}" {
+  TilingU 10
+  TilingV 10
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{BA7293A1C7684C22}Assets/Vehicles/Tracked/BMP3/data/interier1.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

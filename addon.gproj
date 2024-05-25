@@ -1,0 +1,20 @@
+GameProject {
+ ID "BMP3"
+ GUID "5B383D4CB27E0D54"
+ TITLE "BMP3"
+ Dependencies {
+  "58D0FB3206B6F859" "5E389BB9F58B79A6" "5F1EE615E7AE3106"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

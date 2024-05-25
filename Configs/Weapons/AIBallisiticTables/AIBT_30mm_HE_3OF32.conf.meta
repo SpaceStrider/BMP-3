@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{AD776FE46DB74EFA}Configs/Weapons/AIBallisiticTables/AIBT_300mm_HE_3OF32.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

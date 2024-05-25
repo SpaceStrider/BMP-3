@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AlphaTest 1.478
+ AlphaMul 0.779
+ BCRMap "{B7C318844AD01B8A}Assets/Vehicles/Tracked/BMP3/data/Textures/alfa_BCR.edds"
+ NMOMap "{8F1BA31693A74914}Assets/Vehicles/Tracked/BMP3/data/Textures/alfa_NMO.edds"
+}

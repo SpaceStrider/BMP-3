@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D670785E33E31DAA}Prefabs/Weapons/Magazines/Box_100mm_2A70_48rnd_HE.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

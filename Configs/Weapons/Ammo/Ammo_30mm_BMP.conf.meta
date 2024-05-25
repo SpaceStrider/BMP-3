@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DC9817AC686FC410}Configs/Weapons/Ammo/Ammo_30mm_BMP.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

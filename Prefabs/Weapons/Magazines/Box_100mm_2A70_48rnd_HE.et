@@ -1,0 +1,38 @@
+GenericEntity : "{5CD690CF2464ABA9}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_Base.et" {
+ ID "476AE746F954DD20"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 55
+   PriorityAgainstVehicles 50
+   UsedAgainst 12
+   IndirectlyUsedAgainst 3
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "2A40 Belt"
+     Description "HE Belt for 100mm on BMP3"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 40
+    }
+   }
+   WeightPerAmmo 0
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWell100mm2A70 "{476AE746EC5FBEE9}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "2A70 Belt"
+    m_sAmmoCaliber "100mm"
+    m_sAmmoType "HE"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags 42
+   }
+   MaxAmmo 48
+   AmmoConfig "{D470EDE1980E2E45}Configs/Weapons/Ammo/Ammo_100mm_BMP3.conf"
+   AmmoMapping {
+   }
+  }
+ }
+}

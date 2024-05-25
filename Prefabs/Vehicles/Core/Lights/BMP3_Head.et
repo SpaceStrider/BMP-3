@@ -1,0 +1,17 @@
+LightEntity : "{E4B503F14228950A}Prefabs/Vehicles/Core/Lights/VehicleLight_Base.et" {
+ ID "514ED7499ABC27FE"
+ coords -12.488 3.428 2.109
+ angleY 180
+ Color 1 0.952 0.522 1
+ LV 5
+ ProjectionMap "{19A36A9ACDA8EDAB}Common/Textures/Light_profiles/light_profile_vehicles_02_EM.edds"
+ ClipEV 1
+ Type Spot
+ Radius 60
+ SpotAngle 82
+ Dynamic 1
+ VolLightOffset 0.15
+ VolLightScale 0.25
+ VolLightIntensity 0.004
+ LensFlareScale 0.65
+}

@@ -1,0 +1,25 @@
+MetaFileClass {
+ Name "{EBB91B10A735900D}UI/Textures/EditorPreviews/Vehicles/Tracked/BMP3/Screenshot_20230227_054233.edds"
+ Configurations {
+  PNGResourceClass PC {
+   MaxSize "512"
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_ONE : PC {
+   MaxSize "512"
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+   MaxSize "512"
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass PS4 : PC {
+   MaxSize "512"
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass HEADLESS : PC {
+   MaxSize "512"
+   ColorSpace ToSRGB
+  }
+ }
+}

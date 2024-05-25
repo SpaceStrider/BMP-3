@@ -1,0 +1,8 @@
+MatPBRBasic {
+ BCRMap "{9B97AA81EF1AAA3C}Assets/_SharedData/Dirt/ST_destruct_rust_BCR.edds"
+ NMOMap "{EED041FE9CB208F1}Assets/_SharedData/Dirt/ST_Dirt02_NMO.edds"
+ GlobalMapsUVTransform MatUVTransform "{5CB6246DDB89B0DC}" {
+  TilingU 5
+  TilingV 5
+ }
+}

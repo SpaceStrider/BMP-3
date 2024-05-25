@@ -1,0 +1,140 @@
+GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{E57FAF0AC0FCA074}Sounds/Weapons/HeavyWeapons/2A42/Weapons_HeavyWeapons_2A42_Shot.acp"
+   }
+   IncludeInactive 1
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{62C855BB0786BECA}Assets/Weapons/HeavyWeapons/BMP3_30mmCannon.xob"
+   LODFactors {
+    4 2 1 0.1 0.1
+   }
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07E1D123E9}" {
+     Name "2A70"
+     Description "2A70 Description"
+     m_bShowWeaponName 1
+     m_MagIndicator SCR_MagazineIndicatorConfiguration "{5CB767669A5859F5}" {
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5CB767669A5859F1}" {
+     Weight 20000
+     SizeSetupStrategy Volume
+     ItemVolume 12000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5534BB9B9A3E369E}" {
+      CameraPreset Left
+      CameraDistanceToItem 1.9
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+      PivotID "eye"
+     }
+    }
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{FBBE3697C5357F1C}Particles/Weapon/2a42/Smoke_2a42.ptc"
+       EffectPosition EntitySlotInfo "{513A938439231378}" {
+        PivotID "30mmMuzzle_01"
+        Angles 0 0 0
+       }
+       HasSound 0
+      }
+      CaseEjectingEffectComponent "{5CC6423DCB525C70}" {
+       Enabled 0
+       ParticleEffect "{4A8A40E1A773686E}Particles/Weapon/Casing_30mm_BMP3.ptc"
+       EffectPosition EntitySlotInfo a {
+        Offset 0.2718 0 0.5168
+       }
+      }
+      SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
+       ParticleEffect "{0375A373A062BB25}Particles/Weapon/2a42/Muzzle_2a42.ptc"
+       EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
+        PivotID "30mmMuzzle_01"
+        Angles 0 0 0
+       }
+       m_fRadiusOfFlash 8
+       m_fLV 0
+       m_bShadows 1
+      }
+     }
+     MuzzleEndPositions {
+      PointInfo "{B80A64F4B6CFB9BF}" {
+       PivotID "30mmMuzzle_01"
+      }
+     }
+     ProjectileSpawnPositions {
+      PointInfo "{50F64C476EC435CA}" {
+       PivotID "30mmChamber_01"
+      }
+     }
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       MaxBurst -1
+       RoundsPerMinute 330
+      }
+     }
+     MagazineWell MagazineWell30mm2A72 "{5CB767669A5859D8}" {
+     }
+     DispersionDiameter 0.4
+     DispersionRange 575
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5CB767669A5859D6}" {
+       LinearData RecoilData "{5CB767669A5859D4}" {
+        "Curve X" {
+         0 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.75 0.065 0.7 0.071 0.65 0.095 0.5 0.25 0.45 0.45 0.52 0.7 0.495 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.032 0.65 0.045 0.95 0.065 0.95 0.071 0.85 0.095 0.7 0.25 0.35 0.45 0.55 0.7 0.485 1 0.5
+        }
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -0.001 -0.006 -0.022
+        "Curve Maxs" 0 -0.005 -0.018
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_bShowCaliber 1
+      m_sCaliber "30mm"
+     }
+     ReloadDuration 15
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID ""
+      Offset 0 0 -0.13
+     }
+     MagazineTemplate "{8F8C2A7877DBBFF2}Prefabs/Weapons/Magazines/Box_30x165_2A72_250rnd_HEF-I.et"
+    }
+    AttachmentSlotComponent "{5CB767669A58592F}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "2A72"
+    Description ""
+    Icon ""
+    m_bShowWeaponName 1
+   }
+   WeaponSlotType "hmg"
+  }
+ }
+ coords 2259.5 51.2 2160
+}

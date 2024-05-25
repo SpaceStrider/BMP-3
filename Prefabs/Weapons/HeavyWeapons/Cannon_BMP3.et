@@ -1,0 +1,171 @@
+GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{DCDBB1D0D97D0711}Sounds/Weapons/HeavyWeapons/2A72/Weapons_HeavyWeapons_2A70_Shot.acp"
+   }
+   IncludeInactive 1
+  }
+  BGONE_GuidedMissileLauncherComponent "{6046BEF1B8B9D204}" {
+   m_eLockTypeComponent BGONE_LockType_SACLOS "{6046BEF1BE73E20E}" {
+   }
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{2EE84F3918953CE9}Assets/Weapons/HeavyWeapons/BMP3_Gun.xob"
+   LODFactors {
+    4 2 1 0.1 0.1
+   }
+  }
+  RigidBody "{6056559BCAEACDDD}" {
+   Mass 600
+   AngularSleepingThreashold 1
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07E1D123E9}" {
+     Name "2A70"
+     Description "2A70 Description"
+     m_bShowWeaponName 1
+     m_MagIndicator SCR_MagazineIndicatorConfiguration "{5C4E6210EC8F86C7}" {
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5C44908430FAAE0F}" {
+     Weight 20000
+     SizeSetupStrategy Volume
+     ItemVolume 12000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5534BB9B9A3E369E}" {
+      CameraPreset Left
+      CameraDistanceToItem 1.9
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5C44908430FAAEF2}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+      PivotID "eye"
+     }
+    }
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{A16E24F8CBA45068}Particles/Weapon/2a70/Smoke_2a70.ptc"
+       EffectPosition EntitySlotInfo "{513A938439231378}" {
+        PivotID "Muzzle_01"
+        Angles 0 0 0
+       }
+       HasSound 0
+      }
+      CaseEjectingEffectComponent "{6056559B5285ABFA}" {
+       ParticleEffect "{544B5335B22D1A1B}Particles/Weapons/Smoke_Cannon_Medium_Emmiter.ptc"
+       EffectPosition EntitySlotInfo "{6056559B588DFEBA}" {
+        PivotID "Muzzle_01"
+        Offset 0 0 0.15
+        Angles -10 0 0
+       }
+       WaterSurface 8100
+      }
+      SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
+       ParticleEffect "{68617F0E56199A6E}Particles/Weapon/2a70/Muzzle_2a70.ptc"
+       EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
+        PivotID "Muzzle_01"
+        Angles 0 0 0
+       }
+      }
+     }
+     MuzzleEndPositions {
+      PointInfo "{B80A64F4B6CFB9BF}" {
+       PivotID "Muzzle_01"
+      }
+     }
+     ProjectileSpawnPositions {
+      PointInfo "{50F64C476EC435CA}" {
+       PivotID "Muzzle_01"
+       Offset 0 0 -1
+      }
+     }
+     ChamberedAmmo 0
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       MaxBurst -1
+       RoundsPerMinute 15
+      }
+     }
+     MissileWeaponLink BaseMissileWeaponLinkClass "{5EA438F517D1F135}" {
+     }
+     MagazineWell MagazineWell100mm2A70 "{5C44908430FAAEED}" {
+     }
+     DispersionDiameter 0.4
+     DispersionRange 575
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5C44908430FAAEE9}" {
+       LinearData RecoilData "{5C44908430FAAEF4}" {
+        "Curve X" {
+         0 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.75 0.065 0.7 0.071 0.65 0.095 0.5 0.25 0.45 0.45 0.52 0.7 0.495 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.032 0.65 0.045 0.95 0.065 0.95 0.071 0.85 0.095 0.7 0.25 0.35 0.45 0.55 0.7 0.485 1 0.5
+        }
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -0.001 -0.006 -0.022
+        "Curve Maxs" 0 -0.005 -0.018
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      Name "2A70"
+      m_bShowCaliber 1
+      m_sCaliber "100mm"
+     }
+     ReloadDuration 4
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID ""
+      Offset 0 0 -0.1323
+     }
+     MagazineTemplate "{D670785E33E31DAA}Prefabs/Weapons/Magazines/Box_100mm_2A70_48rnd_HE.et"
+    }
+    WeaponAnimationComponent "{605652B870A3F011}" {
+     AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
+     AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
+     AlwaysActive 1
+     AnimInjection AnimationAttachmentInfo "{6056559BC51F1E27}" {
+      AnimGraph "{6791BE2144ADC6A3}Assets/Weapons/HeavyWeapons/workspaces/M2HB_m998.agr"
+      AnimInstance "{90F5E30119FE8312}Assets/Weapons/HeavyWeapons/workspaces/M2HB_Player_tripod.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AnimCommandsToBind {
+      "" ""
+     }
+     AnimVariablesToBind {
+      ""
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "2A70"
+    Description ""
+    Icon ""
+    m_bShowWeaponName 1
+   }
+   WeaponSlotType "hmg"
+  }
+ }
+ coords 2259.5 51.2 2160
+}
