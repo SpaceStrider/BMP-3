@@ -1,0 +1,104 @@
+Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  BGONE_GuidedMissileComponent "{61E8B8D1CEED8428}" {
+   m_eSeekerTypeComponent BGONE_SeekerType_SACLOS "{61E8B8D1CEED8421}" {
+    m_fTimeToLive 30
+    m_fSeekerAngle 60
+   }
+   m_eAttackProfileComponents {
+    BGONE_AttackProfile_SACLOS "{61E8B8D1CEED8425}" {
+     m_fMaxCorrectableDistance 3
+    }
+   }
+   m_eMissileEngineComponent BGONE_MissileEngine_Base "{61E8B8D1CEED8427}" {
+    m_fThrustDelay 0
+    m_fBurnTime 16
+    m_fInitialSpeed 100
+    m_fMaximumSpeed 100
+    m_fTimeToLive 30
+   }
+  }
+  BaseMissileGuidanceComponent "{61E8B8D1CEED841B}" {
+   Enabled 0
+  }
+  CollisionTriggerComponent "{61E8B8D1CEED841C}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{61E8B8D1CEED841F}" {
+     EffectPrefab "{74ADAC16CC477FBA}Prefabs/Weapons/Warheads/Warhead_HEAT_9M117_Fixed.et"
+     ParticleEffect "{B6275B6B9E29E9ED}Particles/Weapon/Explosion_RPG7V1.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+    AIExplosionEffect "{61E8B8D1A006FB27}" {
+    }
+   }
+  }
+  InventoryItemComponent "{526E87778842822F}" {
+   Attributes SCR_ItemAttributeCollection "{526E87778ACB229F}" {
+    ItemDisplayName UIInfo "{526E8777859BAACF}" {
+     Name "9M117 ATGM"
+     Description "Not guidable yet"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{61E8B8D1CEED8408}" {
+     Weight 10
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 20
+     ItemVolume 1200
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{61E8B8D1CEED840C}" {
+      CameraPreset Top
+      CameraDistanceToItem 2.3
+      ItemRenderRotation 0 270 0
+      FOV 10
+     }
+    }
+    m_SlotType SLOT_BACKPACK
+   }
+  }
+  MagazineComponent "{50F6614BB5D5B0A8}" {
+   MagazineWell MagazineWell100mm2A70 "{61E8B8D1CEED8402}" {
+   }
+   UIInfo MagazineUIInfo "{560AE4EBFA0176D4}" {
+    Name "9M117 ATGM"
+    Description "Not guidable yet"
+    m_sAmmoCaliber "100mm"
+    m_sAmmoType "ATGM"
+    m_eAmmoTypeFlags 48
+   }
+   ItemModel "{CA305BDAD273478A}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM_item.xob"
+  }
+  MeshObject "{851AA4A2AE0A56BF}" {
+   Object "{BB3F99FC7223DDC5}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM.xob"
+  }
+  MissileMoveComponent "{0EF36690881261EF}" {
+   Enabled 1
+   InitSpeed 100
+   Mass 18.8
+   TimeToLive 30
+   ProjectileEffects {
+    ProjectileDamage "{56829D01651CE9A7}" {
+     DamageValue 460
+    }
+   }
+   BallisticTableConfig "{04AC3D52618E810C}Configs/Weapons/AIBallisiticTables/AIBT_Rocket_PG7VM.conf"
+   MaxControlRange 0
+   Maneuvrability 0
+   TrackOversteer 0
+   TrackLead 0
+   ThrustInitTime 0.1
+   ThrustTime 0.05
+   ThrustForce 0
+   ForwardAirFriction 0.03
+   SideAirFriction 0.02
+   AlignTorque 0.01
+   DistanceEnableGravitation 30
+  }
+  RocketTraceEffectComponent "{61E8B8D1CEED87F6}" {
+   ParticleEffect "{1AD970E2FCF67860}Particles/Weapon/Trail_100mm_9M117.ptc"
+  }
+ }
+ coords 77.155 0 1199.591
+ ProjectileModel "{BB3F99FC7223DDC5}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM.xob"
+ CartridgeModel "{CA305BDAD273478A}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM_item.xob"
+}

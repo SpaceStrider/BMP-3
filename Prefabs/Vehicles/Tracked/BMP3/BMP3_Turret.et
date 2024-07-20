@@ -85,7 +85,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     CargoCompartmentSlot CommanderCompartment : "{9BD4548866DA1807}Prefabs/Vehicles/Core/Configs/CargoCompartment_Base.conf" {
      CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
       ParentContextList {
-       "Commander_Hatch" "Commander_idle" "BackDoor_R" "BackDoor_L"
+       "CommanderHatch" "Commander_idle" "BackDoor_R" "BackDoor_L"
       }
      }
      GetOutAction SCR_GetOutAction "{509D56665A8C6923}" {
@@ -108,7 +108,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "Commander_idle"
      }
-     SeatType 3
+     SeatType 1
      DoorInfoList {
       0 1
      }
@@ -194,7 +194,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     SCR_2DSightsComponent "{5CB5691C9262A5E7}" {
      SightsPosition PointInfo "{5CB5691C9262A5E6}" {
       PivotID "v_gun_01"
-      Offset -0.439 0.2715 -0.2428
+      Offset -0.439 0.2792 0.0121
       Angles 0 0 0
      }
      SightsFOVInfo SCR_SightsZoomFOVInfo "{5CB5691C9262A5E4}" {
@@ -205,13 +205,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      SightsPointFront PointInfo "{5CB5691C9262A5E2}" {
       PivotID "v_gun_01"
-      Offset -0.439 0.2715 -0.2428
+      Offset -0.3949 0.3438 0.0121
      }
      SightsPointRear PointInfo "{5CB5691C9262A5E1}" {
       PivotID "v_gun_01"
-      Offset -0.439 0.2715 -0.3428
+      Offset -0.3949 0.3438 -0.0381
      }
      ADSTime 0
+     CameraRecoilAmount 0.1
      m_sReticleTexture "{C6C7ED91CA46D859}UI/Textures/Sights/PP61/PP61-white_UI.edds"
      m_sReticleGlowTexture "{A69BBC9569E33737}UI/Textures/Sights/PP61/PP61-glow1024_UI.edds"
      m_bHasIllumination 1
@@ -219,7 +220,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMagnification 2.6
      m_fReticleAngularSize 3.6
      m_fReticlePortion 0.53711
-     m_fReticleBaseZoom 2.6
+     m_fReticleBaseZoom 0
      m_fObjectiveFov 23
      m_fObjectiveScale 0.77
      m_fVignetteScale 0.847
@@ -238,7 +239,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AimingSpeedControls 0.1 0.1
    CameraAdsAttachment PointInfo "{5E2C6DDB321A4794}" {
     PivotID "v_gun_01"
-    Offset -0.439 0.2715 -0.2428
+    Offset -0.3949 0.3438 0.0121
    }
    TurretSpeed 35 35
    TurretAcceleration 35 35
@@ -305,7 +306,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      ContextName "CommanderHatch"
      Position PointInfo "{5CB569CF0899E8AC}" {
       PivotID "v_turret_01"
-      Offset 0.4492 0.5702 -0.4333
+      Offset 0.4492 0.5961 -0.4333
      }
     }
     UserActionContext "{5CB569CF04B09D0D}" {

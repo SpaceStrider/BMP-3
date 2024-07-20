@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{D470EDE1980E2E45}Configs/Weapons/Ammo/Ammo_100mm.conf"
+ Name "{D470EDE1980E2E45}Configs/Weapons/Ammo/Ammo_100mm_BMP3.conf"
  Configurations {
   CONFResourceClass PC {
   }
@@ -10,6 +10,8 @@ MetaFileClass {
   CONFResourceClass PS4 : PC {
   }
   CONFResourceClass HEADLESS : PC {
+  }
+  CONFResourceClass PS5 : PC {
   }
  }
 }
