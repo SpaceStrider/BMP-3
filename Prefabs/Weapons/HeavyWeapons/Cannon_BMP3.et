@@ -141,6 +141,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      MagazineTemplate "{D670785E33E31DAA}Prefabs/Weapons/Magazines/Box_100mm_2A70_48rnd_HE.et"
     }
     WeaponAnimationComponent "{605652B870A3F011}" {
+     Enabled 0
      AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
      AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
      AlwaysActive 1
@@ -167,5 +168,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 2259.5 51.2 2160
+ coords 78.967 0 1197.528
 }

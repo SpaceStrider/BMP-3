@@ -86,47 +86,6 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
    components {
-    SCR_CarControllerComponent_SA "{20FB66C5BC92275B}" {
-     MaxStartupTime 3.6
-     MaxStartupAttempts 10
-     EngineStartupChance 100
-     AirIntakes {
-      PointInfo "{5E2C6DD855760E29}" {
-       Offset 1.0302 1.7947 -2.7818
-      }
-     }
-     ShutdownTime 600
-     DrowningTime 10
-     Type Automatic
-     SteeringForwardSpeed {
-      0 21 2 18 16 24 40 21 60 18 80 12 100 3
-     }
-     SteeringBackwardSpeed {
-      0 21 2 18 16 33 40 40 60 41 80 35 100 26
-     }
-     SteeringCenterSpeed {
-      2 0 16 9 40 19 60 23
-     }
-     ThrottleCurve {
-      2800 0.8 3500 0.5 5000 0
-     }
-     ReverseCurve {
-      1500 0.8 1800 0.5 2300 0
-     }
-     BrakingCurve {
-      0 0 0.3 0.4 0.7 0.4 1 0.7 1.7 0.7 2 1
-     }
-     ClutchUncoupleTime 0.4
-     ClutchCoupleTime 0.2
-     ClutchUncoupleRpm 1200
-     ClutchCoupleRpm 1900
-     Latency 1
-     UpShiftFactor 0.7
-     UpShiftRpm 1900
-     DownShiftFactor 0.65
-     DownShiftRpm 1700
-     TurboShiftFactor 1.1
-    }
     SCR_BaseHUDComponent "{37C2676694790BC7}" {
      InfoDisplays {
       SCR_InfoDisplay "{50E6E6F81354B90F}" {
@@ -165,11 +124,53 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    ModelGeometry 1
   }
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{61E8A5AAADFF41A7}" {
+     AnimDoorIndex 4
+     ContextName "DriverHatch"
+     Coverage 0
+     EntryPositionInfo PointInfo "{61E8A5AAA0E0E4D6}" {
+      Offset 0 1.8512 1.6744
+     }
+     ExitPositionInfo PointInfo "{61E8A5AAA303527E}" {
+      Offset -0.4612 2.0639 2.1671
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+    }
+    CompartmentDoorInfo "{61E8A5AAAD4BA621}" {
+     AnimDoorIndex 1
+     ContextName "BackDoor_R"
+     EntryPositionInfo PointInfo "{61E8A5AA5C3B76CB}" {
+      Offset 0.4137 0 -4.8032
+     }
+     ExitPositionInfo PointInfo "{61E8A5AA5FA009EA}" {
+      Offset 0.4137 0 -4.8032
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+    }
+    CompartmentDoorInfo "{61E8A5AAAC904E68}" {
+     AnimDoorIndex 2
+     ContextName "BackDoor_L"
+     EntryPositionInfo PointInfo "{61E8A5AA59FC4948}" {
+      Offset -0.3884 0 -4.8032
+     }
+     ExitPositionInfo PointInfo "{61E8A5AA5933CFA9}" {
+      Offset -0.3884 0 -4.8032
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+    }
+   }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment : "{FA11A8598F401058}Prefabs/Vehicles/Core/Configs/PilotCompartment_Base.conf" {
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
       ParentContextList {
-       "DriverHatch"
+       "DriverHatch" "BackDoor_L" "BackDoor_R"
       }
      }
      GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
@@ -185,7 +186,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D528254D8CE5491}" {
        ParentContextList {
-        "DriverHatch" "Driver_Idle"
+        "Driver_Idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E93B44D65}" {
+       ParentContextList {
+        "DriverHatch" "BackDoor_R" "BackDoor_L"
        }
       }
      }
@@ -193,113 +199,52 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       PivotID "driver_idle"
      }
      DoorInfoList {
-      CompartmentDoorInfo "{50B8D5DDA17EB35D}" {
-       ContextName "DriverHatch"
-       AnimDoorIndex 4
-       EntryPositionInfo PointInfo "{5CB648AFD82BC8B2}" {
-        Offset 0 1.8512 1.6744
-       }
-       ExitPositionInfo PointInfo "{5C7923EFE0E56245}" {
-        Offset -0.4612 2.0639 2.1671
-       }
-       GetInTeleport 1
-       GetOutTeleport 1
-      }
+      0 1 2
      }
-     UIInfo UIInfo "{50870A1DC44BA836}" {
+     UIInfo SCR_ActionUIInfo "{50870A1DC44BA836}" {
       Name "#AR-VehiclePosition_Driver"
      }
-     AccessibilitySettings CompartmentAccessibilityContext "{5CB648AEC65A9BB0}" {
-     }
-     BaseCoverage 1
+     BaseCoverage 0.3
     }
-    CargoCompartmentSlot Passenger_01 : "{25D7A19C88BEA56A}Prefabs/Vehicles/Tracked/BMP3/BMP3CargoCompartment.conf" {
-     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
-      ParentContextList +{
-      }
-     }
-     GetOutAction SCR_GetOutAction "{509D56665A8C6923}" {
-      ParentContextList +{
-      }
-     }
-     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
-      ParentContextList +{
-      }
-     }
+    CargoCompartmentSlot Passenger_01 : "{44AFFE8DF20A5280}Prefabs/Vehicles/Core/Configs/CargoCompartment_BMP3.conf" {
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "passengerc_idle"
      }
-     SeatType 3
-     DoorInfoList {
-      CompartmentDoorInfo "{50B8D5DD7BC767A1}" {
-       ContextName "BackDoor_R"
-       AnimDoorIndex 2
-       EntryPositionInfo PointInfo "{50B8D5DD78963937}" {
-        Offset 0.4137 0 -4.8032
-       }
-       ExitPositionInfo PointInfo "{5CB6246744F23FF1}" {
-        Offset 0.4137 0 -4.8032
-       }
-       GetInTeleport 1
-       GetOutTeleport 1
-      }
-      CompartmentDoorInfo "{5CB624674D89FD2E}" {
-       ContextName "BackDoor_L"
-       AnimDoorIndex 2
-       EntryPositionInfo PointInfo "{5CB6246748E050EF}" {
-        Offset -0.3884 0 -4.8032
-       }
-       ExitPositionInfo PointInfo "{5CB624674A3DF801}" {
-        Offset -0.3884 0 -4.8032
-       }
-       GetInTeleport 1
-       GetOutTeleport 1
-       SeatPositionAligning 0
-      }
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5CB62466A3DB0ADB}" {
-     }
-     BaseCoverage 1
-     m_DefaultOccupantData SCR_DefaultOccupantData "{5CB62466AE867B08}" {
-     }
     }
-    CargoCompartmentSlot Passenger_02 : "{25D7A19C88BEA56A}Prefabs/Vehicles/Tracked/BMP3/BMP3CargoCompartment.conf" {
+    CargoCompartmentSlot Passenger_02 : "{44AFFE8DF20A5280}Prefabs/Vehicles/Core/Configs/CargoCompartment_BMP3.conf" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
       ParentContextList {
        "passengerrl_idle"
       }
      }
-     PassengerPositionInfo EntitySlotInfo "5CB6246137A87DAD" {
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "passengerl_idle"
      }
     }
-    CargoCompartmentSlot Passenger_03 : "{25D7A19C88BEA56A}Prefabs/Vehicles/Tracked/BMP3/BMP3CargoCompartment.conf" {
+    CargoCompartmentSlot Passenger_03 : "{44AFFE8DF20A5280}Prefabs/Vehicles/Core/Configs/CargoCompartment_BMP3.conf" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
-      ParentContextList {
-       "passengerm_idle"
-      }
      }
-     PassengerPositionInfo EntitySlotInfo "5CB6246137A87DAD" {
-      PivotID "passengerm_idle"
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passengerc_idle"
      }
     }
-    CargoCompartmentSlot Passenger_04 : "{25D7A19C88BEA56A}Prefabs/Vehicles/Tracked/BMP3/BMP3CargoCompartment.conf" {
+    CargoCompartmentSlot Passenger_04 : "{44AFFE8DF20A5280}Prefabs/Vehicles/Core/Configs/CargoCompartment_BMP3.conf" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
       ParentContextList {
        "passengerr_idle"
       }
      }
-     PassengerPositionInfo EntitySlotInfo "5CB6246137A87DAD" {
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "passengerr_idle"
      }
     }
-    CargoCompartmentSlot Passenger_05 : "{25D7A19C88BEA56A}Prefabs/Vehicles/Tracked/BMP3/BMP3CargoCompartment.conf" {
+    CargoCompartmentSlot Passenger_05 : "{44AFFE8DF20A5280}Prefabs/Vehicles/Core/Configs/CargoCompartment_BMP3.conf" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
       ParentContextList {
-       "passengerfl_idle"
+       "passengerl_idle"
       }
      }
-     PassengerPositionInfo EntitySlotInfo "5CB6246137A87DAD" {
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "passengerfl_idle"
      }
     }
@@ -393,7 +338,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    MultiSlots {
     MultiSlotConfiguration "{5CB6246E5BE7B2A8}" {
      SlotTemplate InventoryStorageSlot bandage {
-      Prefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+      Prefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
      }
      NumSlots 8
     }
@@ -455,7 +400,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      SlotTemplate InventoryStorageSlot ATGM {
       Prefab "{90BC2885337765EE}Prefabs/Weapons/Magazines/Box_100mm_2A70_5rnd_ATGM.et"
      }
-     NumSlots 1
+     NumSlots 2
     }
     MultiSlotConfiguration "{5D749277CBF8811E}" {
      SlotTemplate InventoryStorageSlot Mag2 {
@@ -566,7 +511,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    SoundPowerRpmMultiplierDb 28
    HornSoundPowerDb 70
   }
-  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
    SignalsSourceAccess SignalsSourceAccessClass "{5E38CBCA83F28528}" {
    }
    Simulation Wheeled "{4D8B26DEA5F25978}" {
@@ -1094,6 +1039,30 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset 0.248 1.3811 2.1941
      }
     }
+    UserActionContext "{61E8A5A87782C144}" {
+     ContextName "passengerm_idle"
+     Position PointInfo "{61E8A5A8778D8064}" {
+      PivotID "passengerm_idle"
+     }
+    }
+    UserActionContext "{61E8A5A81F7C613E}" {
+     ContextName "passengerr_idle"
+     Position PointInfo "{61E8A5A81F7F3AE8}" {
+      PivotID "passengerr_idle"
+     }
+    }
+    UserActionContext "{61E8A5A81354BB1E}" {
+     ContextName "passengerc_idle"
+     Position PointInfo "{61E8A5A813566B7D}" {
+      PivotID "passengerc_idle"
+     }
+    }
+    UserActionContext "{61E8A5A8135138BB}" {
+     ContextName "passengerl_idle"
+     Position PointInfo "{61E8A5A81350EF2B}" {
+      PivotID "passengerl_idle"
+     }
+    }
    }
    additionalActions {
     SCR_EngineAction "{5CC24B97EB96B5F6}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
@@ -1104,7 +1073,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    AllowCrossHierarchy 1
   }
   VehicleAnimationComponent "{50B803EAA459B0AF}" {
-   AnimGraph "{66618A6A119CAD93}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Graph.agr"
+   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
    AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
    AnimInjection AnimationAttachmentInfo "{50B803EA8AD25BC8}" {
     AnimGraph "{509522ED511E9EFE}Assets/Vehicles/Wheeled/Ural4320/workspaces/URAL.agr"
@@ -1116,6 +1085,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    DeactivationDelay 2
   }
  }
+ coords 88.546 0 1189.159
  m_eVehicleType APC
  m_fTrackSpeed 0.001
 }
