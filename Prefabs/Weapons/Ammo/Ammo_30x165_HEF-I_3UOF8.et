@@ -1,0 +1,13 @@
+TracerProjectile : "{67FED88E5085F63F}Prefabs/Weapons/Core/Ammo_Bullet_Base.et" {
+ ID "476AE74C1F2F140D"
+ components {
+  CollisionTriggerComponent "{5CD01CB61F7AD6CE}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5CD01CB66705F6D3}" {
+     ParticleEffect "{1A9F310B5556F28A}Particles/Weapon/30mmHit/HIT_30mm_HE.ptc"
+    }
+   }
+  }
+ }
+ coords 79.093 0 1193.898
+}
