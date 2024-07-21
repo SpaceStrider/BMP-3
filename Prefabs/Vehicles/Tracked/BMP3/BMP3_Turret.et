@@ -198,9 +198,9 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       Angles 0 0 0
      }
      SightsFOVInfo SCR_SightsZoomFOVInfo "{5CB5691C9262A5E4}" {
-      m_fBaseZoom 2
-      m_fZoomMax 14
-      m_fStepZoomSize 4
+      m_fBaseZoom 1
+      m_fZoomMax 10
+      m_fStepZoomSize 1.6
       m_fInterpolationSpeed 25
      }
      SightsPointFront PointInfo "{5CB5691C9262A5E2}" {
@@ -213,18 +213,21 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      ADSTime 0
      CameraRecoilAmount 0.1
-     m_sReticleTexture "{C6C7ED91CA46D859}UI/Textures/Sights/PP61/PP61-white_UI.edds"
-     m_sReticleGlowTexture "{A69BBC9569E33737}UI/Textures/Sights/PP61/PP61-glow1024_UI.edds"
+     m_sReticleTexture "{6A2C0A687A52519F}UI/bmp3.edds"
+     m_sReticleGlowTexture "{6A2C0A687A52519F}UI/bmp3.edds"
      m_bHasIllumination 1
-     m_cReticleTextureIllumination 0.814 0.702 0.213 1
+     m_cReticleTextureIllumination 0.88 0.423 0.031 1
+     m_fReticleTextureGlowAlpha 0.5
      m_fMagnification 2.6
-     m_fReticleAngularSize 3.6
-     m_fReticlePortion 0.53711
+     m_fReticleAngularSize 25
+     m_fReticlePortion 1
      m_fReticleBaseZoom 0
-     m_fObjectiveFov 23
-     m_fObjectiveScale 0.77
-     m_fVignetteScale 0.847
+     m_fObjectiveFov 28
+     m_fObjectiveScale 0.7
+     m_fVignetteScale 0.7
      m_bShouldHideParentObject 0
+     m_fRotationScale 0.3
+     m_fMovementScale 0.4
      m_fVignetteMoveSpeed 2.6
      m_fMotionBlurScale 0
     }
@@ -250,6 +253,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    shouldHandleObstruction 0
    AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
     Offset 0 0 0
+    Angles 0.1 0 0
     MergePhysics 1
    }
    WeaponTemplate "{F848B4E6BE86EA83}Prefabs/Weapons/HeavyWeapons/30mmCannon_BMP3.et"
@@ -263,6 +267,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
     PivotID "v_gun_01"
     Offset 0 0 0
+    Angles 0.25 0 0
     MergePhysics 1
    }
    WeaponTemplate "{73E6F6383657C169}Prefabs/Weapons/HeavyWeapons/Cannon_BMP3.et"
@@ -339,5 +344,5 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AutoVariablesBind 1
   }
  }
- coords 82.444 0 1192.227
+ coords 106.993 0 1226.336
 }
