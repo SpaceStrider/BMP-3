@@ -1,24 +1,6 @@
 Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
  ID "DA5C6308000CDEF2"
  components {
-  BGONE_GuidedMissileComponent "{61E8B8D1CEED8428}" {
-   m_eSeekerTypeComponent BGONE_SeekerType_SACLOS "{61E8B8D1CEED8421}" {
-    m_fTimeToLive 30
-    m_fSeekerAngle 60
-   }
-   m_eAttackProfileComponents {
-    BGONE_AttackProfile_SACLOS "{61E8B8D1CEED8425}" {
-     m_fMaxCorrectableDistance 3
-    }
-   }
-   m_eMissileEngineComponent BGONE_MissileEngine_Base "{61E8B8D1CEED8427}" {
-    m_fThrustDelay 0
-    m_fBurnTime 16
-    m_fInitialSpeed 100
-    m_fMaximumSpeed 100
-    m_fTimeToLive 30
-   }
-  }
   BaseMissileGuidanceComponent "{61E8B8D1CEED841B}" {
    Enabled 0
   }
@@ -73,7 +55,7 @@ Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
   }
   MissileMoveComponent "{0EF36690881261EF}" {
    Enabled 1
-   InitSpeed 100
+   InitSpeed 300
    Mass 18.8
    TimeToLive 30
    ProjectileEffects {
@@ -92,13 +74,13 @@ Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
    ForwardAirFriction 0.03
    SideAirFriction 0.02
    AlignTorque 0.01
-   DistanceEnableGravitation 30
+   DistanceEnableGravitation 1000
   }
   RocketTraceEffectComponent "{61E8B8D1CEED87F6}" {
    ParticleEffect "{1AD970E2FCF67860}Particles/Weapon/Trail_100mm_9M117.ptc"
   }
  }
- coords 77.155 0 1199.591
+ coords 119.615 0 1244.88
  ProjectileModel "{BB3F99FC7223DDC5}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM.xob"
  CartridgeModel "{CA305BDAD273478A}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM_item.xob"
 }

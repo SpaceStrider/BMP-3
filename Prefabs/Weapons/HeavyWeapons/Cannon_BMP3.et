@@ -50,10 +50,6 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
       Enabled 0
      }
     }
-    BGONE_GuidedMissileLauncherComponent "{61E8B8D047B5F7F8}" {
-     m_eLockTypeComponent BGONE_LockType_SACLOS "{61E8B8D0464591BC}" {
-     }
-    }
     SightsComponent "{BB23A637957CFFF8}" {
      SightsPosition PointInfo "{BB23A63796688E69}" {
       PivotID "eye"
@@ -168,5 +164,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 78.967 0 1197.528
+ coords 112.982 0 1246.204
 }
