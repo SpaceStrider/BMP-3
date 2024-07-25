@@ -148,7 +148,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   SPC_WeaponRecoilComponent "{60505412EC5795CA}" {
-   m_iWeaponIndex 1
+   m_iWeaponIndex 2
    m_fImpulse 3900
    m_vRecoilPosition PointInfo "{60505412B734DB25}" {
     PivotID "v_gun_01"
@@ -268,10 +268,10 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
     PivotID "v_gun_01"
     Offset 0 0 0
-    Angles 0 0 0
+    Angles 0.1 0 0
     MergePhysics 1
    }
-   WeaponTemplate "{73E6F6383657C169}Prefabs/Weapons/HeavyWeapons/Cannon_BMP3.et"
+   WeaponTemplate "{1C38BEE0C4F699A3}Prefabs/Weapons/HeavyWeapons/30mmCannon_BMP3_HE.et"
    WeaponSlotIndex 1
   }
   WeaponSlotComponent "{5CB7676EBA765A4F}" {
@@ -282,10 +282,10 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    shouldHandleObstruction 0
    AttachType InventoryStorageSlot Gun {
     PivotID "v_gun_01"
-    Offset -0.1668 -0.1817 -0.3052
+    Offset 0 0 0
     MergePhysics 1
    }
-   WeaponTemplate "{4FD1A5A6670E015A}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT.et"
+   WeaponTemplate "{73E6F6383657C169}Prefabs/Weapons/HeavyWeapons/Cannon_BMP3.et"
    WeaponSlotIndex 2
   }
   SCR_TurretInventoryStorageManagerComponent "{5CB5691C9262A5CC}" {
@@ -344,6 +344,29 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
    AutoVariablesBind 1
   }
+  WeaponSlotComponent "{61F303A2E61AB444}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{61F303A29B6B957F}" {
+    signalsSuffix "Turret"
+   }
+   useAimingType MainTurret
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   AttachType InventoryStorageSlot "{61F303A2946D4D47}" {
+    PivotID "v_gun_01"
+    Offset -0.1668 -0.1817 -0.3052
+    MergePhysics 1
+   }
+   WeaponTemplate "{4FD1A5A6670E015A}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT.et"
+   WeaponSlotIndex 3
+  }
+  SPC_WeaponRecoilComponent "{61F303A2AAD837B6}" {
+   m_iWeaponIndex 1
+   m_fImpulse 388
+   m_vRecoilPosition PointInfo "{61F303A25DF25B7C}" {
+    PivotID "v_gun_01"
+   }
+  }
  }
- coords 108.941 0 1239.036
+ coords 162.153 0 1232.194
 }
