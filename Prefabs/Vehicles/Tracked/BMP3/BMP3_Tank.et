@@ -258,10 +258,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     m_Image "{EBB91B10A735900D}UI/Textures/EditorPreviews/Vehicles/Tracked/BMP3/Screenshot_20230227_054233.edds"
     m_sFaction "USSR"
     m_aAuthoredLabels + {
-     20 21 26 36 1001
+     53 21 26 36 1001
     }
     m_aAutoLabels {
-     10 122 54
+     10 122
     }
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
@@ -1085,7 +1085,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    DeactivationDelay 2
   }
  }
- coords 88.546 0 1189.159
+ coords 1291.307 37.969 2832.258
  m_eVehicleType APC
  m_fTrackSpeed 0.001
 }

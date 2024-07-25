@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{001B93E4AE3C955B}Configs/EntityCatalog/USSR/USSR_Vehicles.conf"
+ Name "{09C2ED5F617A0390}Configs/EntityCatalog/USSR/Vehicles_EntityCatalog_USSR.conf"
  Configurations {
   CONFResourceClass PC {
   }
@@ -8,6 +8,8 @@ MetaFileClass {
   CONFResourceClass XBOX_SERIES : PC {
   }
   CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
   }
   CONFResourceClass HEADLESS : PC {
   }
