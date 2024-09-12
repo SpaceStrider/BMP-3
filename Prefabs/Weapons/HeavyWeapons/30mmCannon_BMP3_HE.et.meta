@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{782FB1A99F34CF76}Prefabs/Vehicles/Tracked/BMP3/BMP3_Turret.et"
+ Name "{1C38BEE0C4F699A3}Prefabs/Weapons/HeavyWeapons/30mmCannon_BMP3_HE.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -9,9 +9,9 @@ MetaFileClass {
   }
   EntityTemplateResourceClass PS4 : PC {
   }
-  EntityTemplateResourceClass HEADLESS : PC {
-  }
   EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
   }
  }
 }

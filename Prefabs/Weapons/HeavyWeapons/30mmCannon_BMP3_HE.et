@@ -1,0 +1,15 @@
+GenericEntity : "{F848B4E6BE86EA83}Prefabs/Weapons/HeavyWeapons/30mmCannon_BMP3.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MagazineWell MagazineWell30mm2A72HE "{5CB767669A5859D8}" {
+     }
+     MagazineTemplate "{8F8C2A7877DBBFF2}Prefabs/Weapons/Magazines/Box_30x165_2A72_250rnd_HEF-I.et"
+    }
+   }
+  }
+ }
+ coords 163.326 0 1229.095
+}

@@ -37,6 +37,13 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
+    AttachmentSlotComponent "{5CB767669A58592F}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
     SightsComponent "{BB23A637957CFFF8}" {
      SightsPosition PointInfo "{BB23A63796688E69}" {
       PivotID "eye"
@@ -65,9 +72,6 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
         PivotID "30mmMuzzle_01"
         Angles 0 0 0
        }
-       m_fRadiusOfFlash 8
-       m_fLV 0
-       m_bShadows 1
       }
      }
      MuzzleEndPositions {
@@ -86,7 +90,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
        RoundsPerMinute 330
       }
      }
-     MagazineWell MagazineWell30mm2A72 "{5CB767669A5859D8}" {
+     MagazineWell MagazineWell30mm2A72AP "{5CB767669A5859D8}" {
      }
      DispersionDiameter 0.4
      DispersionRange 575
@@ -117,14 +121,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
       PivotID ""
       Offset 0 0 -0.13
      }
-     MagazineTemplate "{8F8C2A7877DBBFF2}Prefabs/Weapons/Magazines/Box_30x165_2A72_250rnd_HEF-I.et"
-    }
-    AttachmentSlotComponent "{5CB767669A58592F}" {
-     AttachmentSlot InventoryStorageSlot optics {
-      PivotID "slot_optics"
-      ChildPivotID "snap_weapon"
-      Enabled 0
-     }
+     MagazineTemplate "{4195403866390EEE}Prefabs/Weapons/Magazines/Box_30x165_2A72_250rnd_AP-T.et"
     }
    }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
@@ -136,5 +133,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 2259.5 51.2 2160
+ coords 174.182 0.389 1241.121
 }

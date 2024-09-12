@@ -7,10 +7,6 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    }
    IncludeInactive 1
   }
-  BGONE_GuidedMissileLauncherComponent "{6046BEF1B8B9D204}" {
-   m_eLockTypeComponent BGONE_LockType_SACLOS "{6046BEF1BE73E20E}" {
-   }
-  }
   MeshObject "{CFBAA4B701F95D69}" {
    Object "{2EE84F3918953CE9}Assets/Weapons/HeavyWeapons/BMP3_Gun.xob"
    LODFactors {
@@ -94,7 +90,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      ProjectileSpawnPositions {
       PointInfo "{50F64C476EC435CA}" {
        PivotID "Muzzle_01"
-       Offset 0 0 -1
+       Offset 0 0 0.0863
       }
      }
      ChamberedAmmo 0
@@ -141,6 +137,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      MagazineTemplate "{D670785E33E31DAA}Prefabs/Weapons/Magazines/Box_100mm_2A70_48rnd_HE.et"
     }
     WeaponAnimationComponent "{605652B870A3F011}" {
+     Enabled 0
      AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
      AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
      AlwaysActive 1
@@ -167,5 +164,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 2259.5 51.2 2160
+ coords 112.982 0 1246.204
 }

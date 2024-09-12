@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{782FB1A99F34CF76}Prefabs/Vehicles/Tracked/BMP3/BMP3_Turret.et"
+ Name "{6760C6582F09E5CD}Prefabs/Weapons/Ammo/Ammo_30x165_HEF-I_3UOF8.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -9,9 +9,9 @@ MetaFileClass {
   }
   EntityTemplateResourceClass PS4 : PC {
   }
-  EntityTemplateResourceClass HEADLESS : PC {
-  }
   EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
   }
  }
 }
