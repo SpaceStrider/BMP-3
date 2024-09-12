@@ -230,7 +230,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMovementScale 0.4
      m_fVignetteMoveSpeed 2.6
      m_fMotionBlurScale 0
-     m_fReticleOffsetY 0.05
     }
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5CB5691C9262A5FE}" {
